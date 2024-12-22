@@ -8,6 +8,7 @@ type Abonent struct {
 	Site      Site
 	Rate      float32
 	Phone     string
+	Equip     Equipment
 }
 
 // Договор
@@ -23,9 +24,10 @@ type Site struct {
 	Address string
 }
 
+// Оборудование
 type Equipment struct {
 	Type      string
 	Name      string
-	SerialNum int64
+	SerialNum string
 	Status    string
 }
